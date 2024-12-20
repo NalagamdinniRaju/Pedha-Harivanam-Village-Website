@@ -12,6 +12,7 @@ import ChatBot from './components/ChatBot';
 import AboutPage from './components/AboutPage'
 import OurWorkPage from './components/OurWorkPage'
 import ContactPage from './components/ContactPage'
+import FundRaisePopup from './components/FundRaisePopup';
 import { ThemeProvider } from './context/ThemeContext';
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
           </Routes>
           <Footer />
           <ChatBot />
+          <FundRaisePopup />
         </div>
       </BrowserRouter>
     </ThemeProvider>

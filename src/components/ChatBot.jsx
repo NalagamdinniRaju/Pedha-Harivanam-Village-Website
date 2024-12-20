@@ -75,46 +75,46 @@ export default function ChatBot() {
                 <form onSubmit={handleSubmit} className="space-y-4">
                   {/* Form fields */}
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">Name</label>
+                    <label className="block text-sm font-medium text-gray-700 dark:text-white">Name</label>
                     <input
                       type="text"
                       required
-                      className="mt-1 block w-full rounded-md border-gray-300 dark:border-gray-700 dark:bg-gray-900"
+                      className="mt-1 block w-full rounded-md border-gray-300 dark:border-gray-700 dark:text-white dark:bg-gray-900"
                       onChange={(e) => setUserData({ ...userData, username: e.target.value })}
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">Age</label>
+                    <label className="block text-sm font-medium text-gray-700 dark:text-white">Age</label>
                     <input
                       type="number"
                       required
-                      className="mt-1 block w-full rounded-md border-gray-300 dark:border-gray-700 dark:bg-gray-900"
+                      className="mt-1 block w-full rounded-md border-gray-300 dark:border-gray-700 dark:text-white dark:bg-gray-900"
                       onChange={(e) => setUserData({ ...userData, age: e.target.value })}
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">Mobile</label>
+                    <label className="block text-sm font-medium text-gray-700 dark:text-white">Mobile</label>
                     <input
                       type="tel"
                       required
-                      className="mt-1 block w-full rounded-md border-gray-300 dark:border-gray-700 dark:bg-gray-900"
+                      className="mt-1 block w-full rounded-md border-gray-300 dark:border-gray-700 dark:text-white dark:bg-gray-900"
                       onChange={(e) => setUserData({ ...userData, mobile: e.target.value })}
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">Village</label>
+                    <label className="block text-sm font-medium text-gray-700 dark:text-white">Village</label>
                     <input
                       type="text"
                       required
-                      className="mt-1 block w-full rounded-md border-gray-300 dark:border-gray-700 dark:bg-gray-900"
+                      className="mt-1 block w-full rounded-md border-gray-300 dark:border-gray-700 dark:text-white dark:bg-gray-900"
                       onChange={(e) => setUserData({ ...userData, village: e.target.value })}
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">Interests</label>
+                    <label className="block text-sm font-medium text-gray-700 dark:text-white">Interests</label>
                     <textarea
                       required
-                      className="mt-1 block w-full rounded-md border-gray-300 dark:border-gray-700 dark:bg-gray-900"
+                      className="mt-1 block w-full rounded-md border-gray-300 dark:border-gray-700 dark:text-white dark:bg-gray-900"
                       onChange={(e) => setUserData({ ...userData, interests: e.target.value })}
                       placeholder="What activities interest you?"
                     ></textarea>
@@ -133,7 +133,7 @@ export default function ChatBot() {
                   <p className="text-green-600 font-semibold mb-4">
                     Thank you for joining PHDY!
                     <br/>
-                    <span className="p-2 rounded text-white">
+                    <span className="p-2 rounded text-black dark:text-white">
                       Your profile will be live soon! 
                       <br/>ID: {Math.floor(Math.random() * 1000000)}
                     </span>                  
